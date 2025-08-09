@@ -1,15 +1,6 @@
 markdown
 # Databricks Sales Analysis Project
 
-![Databricks Logo](https://databricks.com/wp-content/uploads/2021/10/databricks-logo.png)
-
-```graph TD
-    A[Raw Sales Data] --> B{ETL Process}
-    B --> C[Clean Delta Tables]
-    C --> D[Analysis & Visuals]
-    C --> E[ML Predictions]
-```
-
 A beginner-friendly project demonstrating data processing, analysis, and machine learning using Databricks.
 
 ## Overview
@@ -85,6 +76,8 @@ df = spark.read.csv("/FileStore/tables/Superstore.csv", header=True, inferSchema
 display(df.limit(5))
 df.printSchema()
 ```
+- Progress Update: Successfully loaded and explored the superstore table in Sales_Analysis notebook using the serverless environment. Challenge: Learned to troubleshoot cell execution by ensuring proper connection to the warehouse. Screenshot included below.
+
 ## Day 2: Data Cleaning & Delta Lake
 Objectives:
 
@@ -116,7 +109,7 @@ Deploy to GitHub
 To be updated upon project completion
 
 ## Screenshots
-Add visual documentation as project progresses
+![Día 1 Screenshot](Screenshots Project/Day1_Screenshot.png)
 
 ## Lessons Learned
 Key takeaways will be documented here

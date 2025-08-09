@@ -109,7 +109,7 @@ Deploy to GitHub
 To be updated upon project completion
 
 ## Screenshots
-![Día 1 Screenshot](Screenshots Project/Day1_Screenshot.png)
+![Día 1 Screenshot](Screenshots Project/day1_screenshot.png)
 
 ## Lessons Learned
 Key takeaways will be documented here

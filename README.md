@@ -80,12 +80,17 @@ df.printSchema()
 
 ## Day 2: Data Cleaning & Delta Lake
 Objectives:
+-Handle missing values and type conversions
+-Create calculated columns
+-Implement Delta Lake storage
 
-Handle missing values and type conversions
-
-Create calculated columns
-
-Implement Delta Lake storage
+- Progress Update: 
+Notebook Setup: Added Markdown for Day 2 objectives and verified serverless environment, resetting compute to fix execution errors like [RETRIES_EXCEEDED].
+Data Cleaning: Loaded default.superstore table, inspected nulls in numeric columns (found none), filled nulls in Profit with 0, and created Profit_Adjusted to convert negatives to 0.
+Data Transformation: Added Total_Sales column (Sales * Quantity) and grouped by Region to calculate totals (e.g., West ~3.6M, East ~3.4M).
+Delta Lake Storage: Renamed columns to avoid invalid characters, saved as managed Delta table "superstore_transformed" with versioning, and verified with DESCRIBE HISTORY and show(5).
+Initial Insights: West region leads in sales, suggesting focus for future analysis.
+Challenges Overcome: Resolved type mismatches ([DATATYPE_MISMATCH]), column name errors ([DELTA_INVALID_CHARACTERS_IN_COLUMN_NAMES]), and DBFS restrictions by using managed tables.
 
 ## Day 3: Analysis & Machine Learning
 Objectives:
@@ -110,6 +115,7 @@ To be updated upon project completion
 
 ## Screenshots
 ![Day 1 Screenshot](screenshots_project/day1_screenshot.png)
+![Day 2 Screenshot](screenshots_project/day2_screenshot.png)
 
 ## Lessons Learned
 Key takeaways will be documented here

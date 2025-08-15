@@ -94,12 +94,17 @@ Challenges Overcome: Resolved type mismatches ([DATATYPE_MISMATCH]), column name
 
 ## Day 3: Analysis & Machine Learning
 Objectives:
+- Execute SQL queries for business insights
+- Create visualizations for data exploration
+- Train a simple machine learning model with MLflow
 
-Execute SQL queries for business insights
-
-Generate visualizations
-
-Build and track ML model
+- Progress Update: 
+  - Notebook Setup: Added Markdown for Day 3 objectives and verified serverless environment.
+  - SQL Analysis: Ran query to identify top 10 products by Total_Sales (e.g., FUR-TA-10000577 with high sales).
+  - Visualizations: Created bar chart using Pandas to show Total_Sales_Region by Region (West leads ~3.6M), overcoming display() limitation with serverless.
+  - Machine Learning: Used average prediction (Total_Sales ~1149.50) due to restrictions on LinearRegression and MLflow in Community Edition.
+  - Initial Insights: West and East dominate sales, top products identified, average sales provide a baseline.
+  - Challenges Overcome: Adapted to ML limitations by using a baseline average prediction instead of training a model.
 
 ## Day 4: Documentation & Deployment
 Objectives:
@@ -116,6 +121,9 @@ To be updated upon project completion
 ## Screenshots
 ![Day 1 Screenshot](screenshots_project/day1_screenshot.png)
 ![Day 2 Screenshot](screenshots_project/day2_screenshot.png)
+![Day 3 Screenshot](screenshots_project/day3.1_screenshot.png)
+![Day 3 Screenshot](screenshots_project/day3.2_screenshot.png)
+![Day 3 Screenshot](screenshots_project/day3.3_screenshot.png)
 
 ## Lessons Learned
 Key takeaways will be documented here
